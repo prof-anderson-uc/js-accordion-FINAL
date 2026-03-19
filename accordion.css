@@ -1,0 +1,100 @@
+/* 
+   Try customizing:
+   - colors
+   - fonts
+   - border styles
+   - spacing
+   - border radius
+   - transition speed
+*/
+
+/* Basic page styles
+----------------------------------*/
+body {
+  background-color: cornsilk; /* Background color for the whole page */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+  max-width: 800px; /* Limits how wide the content area can grow */
+  margin: 1rem auto;   /* Centers the wrapper horizontally and adds space above/below */
+  padding: 2rem; /* Adds space inside the wrapper around the content */
+  background: white;
+  border-radius: 1rem;
+  border: 2px solid silver;
+}
+
+header h1 {
+  font-size: 1.75rem;
+}
+
+header h2 {
+  font-weight: normal;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+main li {
+  margin: 0 0 1rem 2rem;
+}
+
+
+/* Accordion button
+----------------------------------*/
+.accordion-button {
+  font-size: 1.25rem; /* Size of the button text */
+  font-weight: bold;
+  color: black;
+  text-align: left;
+  padding: 1rem 0.5rem; /* Space inside the button */
+  background-color: #eeeeee; /* Background color of the button */
+  border: 1px solid silver; /* Border around the button */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering */
+  width: 100%; /* Makes the button stretch across the full width */
+  margin-top: 0.5rem; /* Adds space above each button */
+  transition: all 1s ease; /* Smoothly animates changes to the button */
+}
+
+.accordion-button:hover {
+  background-color: silver;/* Changes the background color when hovering */
+}
+
+
+/* Arrow styling
+----------------------------------*/
+.accordion-arrow {
+  display: inline-block; /* Allows arrow to behave more like a block for animation */
+  margin-right: 0.5rem; /* Adds space between the arrow and text */
+  transition: all 0.3s ease; /* Smoothly animates rotation */
+}
+
+
+/* Rotate arrow when open
+----------------------------------*/
+.accordion-button.open .accordion-arrow {
+  transform: rotate(90deg); /* Rotates arrow 90 degrees when accordion is open */
+}
+
+
+/* Accordion content
+----------------------------------*/
+.accordion-content {
+  max-height: 0; /* Starts closed with no visible height */
+  overflow: hidden; /* Hides anything that extends beyond box */
+  background-color: #f7f7f7; /* Background color of the hidden/revealed content area */
+  border: 1px solid silver; /* Border around the content area */
+  border-top: none; /* Removes top border so it connects more cleanly */
+  padding: 0 1rem; /* Left and right padding when closed */
+  transition: all 0.5s ease; /* Smoothly animates opening and closing */
+  border-bottom-left-radius: 1rem; /* Rounds the bottom corners */
+  border-bottom-right-radius: 1rem; /* Rounds the bottom corners */
+}
+
+
+/* Open content state
+----------------------------------*/
+.accordion-content.open {
+  /* Gives the content area enough height to show its contents */
+  /* If the content gets cut off, increase this value */
+  max-height: 200px;
+  padding: 1rem; /* Adds full padding when open */
+}
