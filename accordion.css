@@ -8,36 +8,6 @@
    - transition speed
 */
 
-/* Basic page styles
-----------------------------------*/
-body {
-  background-color: cornsilk; /* Background color for the whole page */
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.wrapper {
-  max-width: 800px; /* Limits how wide the content area can grow */
-  margin: 1rem auto;   /* Centers the wrapper horizontally and adds space above/below */
-  padding: 2rem; /* Adds space inside the wrapper around the content */
-  background: white;
-  border-radius: 1rem;
-  border: 2px solid silver;
-}
-
-header h1 {
-  font-size: 1.75rem;
-}
-
-header h2 {
-  font-weight: normal;
-  margin: 0.5rem 0 0.5rem 0;
-}
-
-main li {
-  margin: 0 0 1rem 2rem;
-}
-
-
 /* Accordion button
 ----------------------------------*/
 .accordion-button {
@@ -97,4 +67,43 @@ main li {
   /* If the content gets cut off, increase this value */
   max-height: 200px;
   padding: 1rem; /* Adds full padding when open */
+}
+
+
+
+
+
+
+
+/* Basic page styles
+----------------------------------*/
+body {
+  background-color: cornsilk; /* Background color for the whole page */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+  max-width: 800px; /* Limits how wide the content area can grow */
+  margin: 1rem auto;   /* Centers the wrapper horizontally and adds space above/below */
+  padding: 2rem; /* Adds space inside the wrapper around the content */
+  background: white;
+  border-radius: 1rem;
+  border: 2px solid silver;
+}
+
+header h1 {
+  font-size: 1.75rem;
+}
+
+header h2 {
+  font-weight: normal;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+main {
+  line-height: 1.3;
+}
+
+main li {
+  margin: 0 0 1rem 2rem;
 }
