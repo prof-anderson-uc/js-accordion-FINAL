@@ -3,10 +3,11 @@
 var accordionButtons = document.querySelectorAll(".accordion-button");
 
 // Loop through each accordion button in the list.
-accordionButtons.forEach(function (button) {
+// The name "button" means the current button being worked on.
+accordionButtons.forEach(function(button) {
 
   // When this button is clicked, run the function below.
-  button.onclick = function () {
+  button.onclick = function() {
 
     // Find the element that comes right after the clicked button in the HTML.
     // In this accordion, that next element is the content panel.
@@ -24,7 +25,6 @@ accordionButtons.forEach(function (button) {
   };
 
 });
-
 
 /*
 ==================================================
