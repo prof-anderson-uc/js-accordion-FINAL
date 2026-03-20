@@ -26,6 +26,7 @@ accordionButtons.forEach(function(button) {
 
 });
 
+
 /*
 ==================================================
 DETAILED EXPLANATION
