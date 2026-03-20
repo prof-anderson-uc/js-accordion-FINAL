@@ -57,6 +57,10 @@ Why use forEach()?
 forEach() loops through each item in a list.
 Here, it lets us go through each accordion button and attach the same click behavior to all of them.
 
+What does function(button) mean?
+This creates a function that runs once for each item in the accordionButtons list.
+The word "button" is a parameter name. It represents one accordion button at a time as the loop moves through the list.
+
 Why use onclick?
 onclick assigns a function that runs when the user clicks the button.
 
@@ -89,6 +93,14 @@ The content panel needs the "open" class so CSS can show or hide it.
 The button may also need the "open" class so CSS can change its appearance,
 such as rotating an arrow or changing the background color.
 
+Is it okay to write function(button) without a space?
+Yes. JavaScript allows both styles:
+- function(button)
+- function (button)
+
+They work the same way.
+This version uses function(button) to stay consistent with earlier class examples.
+
 ==================================================
 GLOSSARY OF TERMS
 ==================================================
@@ -110,14 +122,13 @@ It is a collection of matching elements.
 forEach():
 Loops through each item in a list one at a time.
 
-function:
-A block of code that runs when it is called.
+function(button):
+A function that runs once for each item in the list.
+The parameter name "button" represents the current accordion button being worked on.
 
-accordionButtons:
-A variable that stores the full group of accordion buttons.
-
-button:
-A parameter name representing one accordion button at a time in the loop.
+function():
+A function with no named parameter.
+In this script, it is used for the click event.
 
 onclick:
 An event property that runs code when an element is clicked.
@@ -138,7 +149,6 @@ Adds a class if it is missing, or removes it if it is already there.
 "open":
 A CSS class name used to control styling or visibility.
 
-
 ==================================================
 VARIABLE LIST
 ==================================================
@@ -153,3 +163,4 @@ content:
 Stores the element that comes right after the clicked button.
 This is the accordion content panel that opens and closes.
 */
+
